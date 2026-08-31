@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="機車排氣定期檢驗資訊專區網站範本，提供定檢對象、期限、流程、定檢站查詢、不合格處理及新北市簡訊提醒資訊。">
+  <title>機車排氣定期檢驗資訊專區</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+  <div class="template-alert">【本頁為網站範本，正式發布前請更新聯絡方式及公告內容。】</div>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="#top" class="brand" aria-label="回到首頁">
+        <span class="brand-icon" aria-hidden="true">🛵</span>
+        <span class="brand-text"><strong>機車排氣定期檢驗資訊專區</strong><small>Motorcycle Emission Inspection</small></span>
+      </a>
+      <button id="menuBtn" class="menu-btn" aria-expanded="false" aria-controls="mainNav">☰ 選單</button>
+      <nav id="mainNav" class="main-nav" aria-label="主要導覽">
+        <a href="#quick">快速看懂</a><a href="#deadline">定檢期限</a><a href="#process">申請流程</a>
+        <a href="#fail">不合格怎麼辦</a><a href="#data">數據圖表</a><a href="#links">官方查詢</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-shape hero-shape-1"></div><div class="hero-shape hero-shape-2"></div>
+      <div class="hero-copy">
+        <span class="eyebrow">定期檢驗．簡單完成</span>
+        <h1>機車排氣定檢<br><em>3 分鐘快速看懂</em></h1>
+        <p>出廠滿 5 年以上的機車，每年都要做排氣定期檢驗。看懂期限、找到定檢站、完成檢測，其實很簡單。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#deadline">我要查定檢時間</a>
+          <a class="btn btn-light" href="https://mobile.moenv.gov.tw/Motor/Station/ST_search.aspx" target="_blank" rel="noopener noreferrer">查附近定檢站 ↗</a>
+        </div>
+        <div class="hero-tags" aria-label="定檢重點"><span>滿 5 年以上</span><span>每年 1 次</span><span>發照月前後 1 個月</span></div>
+      </div>
+      <div class="hero-photo-card">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTAwIDc2MCI+CjxkZWZzPgogIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgIDxzdG9wIHN0b3AtY29sb3I9IiNFOUY4RjMiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNEQ0VGRkEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxsaW5lYXJHcmFkaWVudCBpZD0ic2hvcCIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPgogICAgPHN0b3Agc3RvcC1jb2xvcj0iIzFDOEE3NSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzExNkI1QiIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPGZpbHRlciBpZD0ic2hhZG93Ij48ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iMTQiIHN0ZERldmlhdGlvbj0iMTgiIGZsb29kLWNvbG9yPSIjMTc0RjQ3IiBmbG9vZC1vcGFjaXR5PSIuMTYiLz48L2ZpbHRlcj4KPC9kZWZzPgo8cmVjdCB3aWR0aD0iMTEwMCIgaGVpZ2h0PSI3NjAiIHJ4PSI0MiIgZmlsbD0idXJsKCNiZykiLz4KPGNpcmNsZSBjeD0iOTA1IiBjeT0iMTI2IiByPSI2OCIgZmlsbD0iI0ZGRTQ5QiIvPgo8ZyBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuOTIiPgogIDxlbGxpcHNlIGN4PSIxNDQiIGN5PSIxMjUiIHJ4PSI2MiIgcnk9IjMxIi8+PGVsbGlwc2UgY3g9IjE5MSIgY3k9IjEyOCIgcng9IjQ0IiByeT0iMjUiLz48ZWxsaXBzZSBjeD0iMTY5IiBjeT0iMTAyIiByeD0iMzgiIHJ5PSIzNSIvPgo8L2c+Cgo8IS0tIGluc3BlY3Rpb24gc2hvcCAtLT4KPGcgZmlsdGVyPSJ1cmwoI3NoYWRvdykiPgogIDxyZWN0IHg9IjQ1MCIgeT0iMTkwIiB3aWR0aD0iNTA1IiBoZWlnaHQ9IjM3MCIgcng9IjI2IiBmaWxsPSIjZmZmIi8+CiAgPHJlY3QgeD0iNDUwIiB5PSIxOTAiIHdpZHRoPSI1MDUiIGhlaWdodD0iMTA1IiByeD0iMjYiIGZpbGw9InVybCgjc2hvcCkiLz4KICA8cmVjdCB4PSI0NTAiIHk9IjI1OCIgd2lkdGg9IjUwNSIgaGVpZ2h0PSIzNyIgZmlsbD0idXJsKCNzaG9wKSIvPgogIDxyZWN0IHg9IjQ5NCIgeT0iMzI2IiB3aWR0aD0iMTk1IiBoZWlnaHQ9IjIzNCIgcng9IjE0IiBmaWxsPSIjRTlGMUYyIi8+CiAgPHJlY3QgeD0iNzI0IiB5PSIzMjYiIHdpZHRoPSIxODIiIGhlaWdodD0iMjM0IiByeD0iMTQiIGZpbGw9IiNGNkZBRkEiLz4KPC9nPgo8dGV4dCB4PSI1NDIiIHk9IjI1MiIgZm9udC1mYW1pbHk9Ik1pY3Jvc29mdCBKaGVuZ0hlaSxBcmlhbCIgZm9udC13ZWlnaHQ9IjkwMCIgZm9udC1zaXplPSIzOCIgZmlsbD0iI2ZmZiI+5qmf6LuK5o6S5rCj5a6a5qqi56uZPC90ZXh0Pgo8cmVjdCB4PSI3NTIiIHk9IjM2MCIgd2lkdGg9IjExNiIgaGVpZ2h0PSI3NiIgcng9IjEyIiBmaWxsPSIjRERGM0VDIi8+CjxjaXJjbGUgY3g9Ijc4MiIgY3k9IjM5NyIgcj0iMTgiIGZpbGw9IiM2MUJEQUEiLz48cGF0aCBkPSJNODEzIDM4NGgzNU04MTMgNDAxaDI4TTgxMyA0MThoMzkiIHN0cm9rZT0iIzRBNzQ3MCIgc3Ryb2tlLXdpZHRoPSI4IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KCjwhLS0gcm9hZCAtLT4KPHBhdGggZD0iTTAgNTgwQzIxMiA1MzQgMzY1IDYwOCA1NDAgNTc0QzcxNCA1NDEgODc1IDU1OCAxMTAwIDUxMlY3NjBIMFoiIGZpbGw9IiMzMTRFNTciLz4KPHBhdGggZD0iTTcwIDY2NEgxOTZNMjU5IDY2NEgzODVNNDQ4IDY2NEg1NzRNNjM3IDY2NEg3NjNNODI2IDY2NEg5NTIiIHN0cm9rZT0iI0U3RjZGMiIgc3Ryb2tlLXdpZHRoPSIxMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cgo8IS0tIHNjb290ZXIgLS0+CjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwMCA0MjApIiBmaWx0ZXI9InVybCgjc2hhZG93KSI+CiAgPGNpcmNsZSBjeD0iOTIiIGN5PSIyMTAiIHI9IjQ4IiBmaWxsPSIjMTczOTQzIi8+PGNpcmNsZSBjeD0iOTIiIGN5PSIyMTAiIHI9IjIxIiBmaWxsPSIjQjhEN0QwIi8+CiAgPGNpcmNsZSBjeD0iMzE4IiBjeT0iMjEwIiByPSI0OCIgZmlsbD0iIzE3Mzk0MyIvPjxjaXJjbGUgY3g9IjMxOCIgY3k9IjIxMCIgcj0iMjEiIGZpbGw9IiNCOEQ3RDAiLz4KICA8cGF0aCBkPSJNOTMgMTg5SDE5MUwyMzUgOTNIMzE5IiBzdHJva2U9IiNGMEE0NEIiIHN0cm9rZS13aWR0aD0iMjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0xODkgMTkxSDI5MUwyNTMgMTMzSDE3NFoiIGZpbGw9IiNGRkQ1ODQiLz4KICA8cGF0aCBkPSJNMjM0IDkzTDIxOCA0OUgyNzQiIHN0cm9rZT0iIzE3Mzk0MyIgc3Ryb2tlLXdpZHRoPSIxNyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHJlY3QgeD0iMTU5IiB5PSIxMTMiIHdpZHRoPSI5MCIgaGVpZ2h0PSIyOSIgcng9IjE1IiBmaWxsPSIjMTczOTQzIi8+CiAgPCEtLSBzY29vdGVyIGZhY2UgLS0+CiAgPGNpcmNsZSBjeD0iMjE0IiBjeT0iMTY2IiByPSI2IiBmaWxsPSIjMTczOTQzIi8+PGNpcmNsZSBjeD0iMjM5IiBjeT0iMTY2IiByPSI2IiBmaWxsPSIjMTczOTQzIi8+CiAgPHBhdGggZD0iTTIxOSAxODBDMjI2IDE4OCAyMzUgMTg4IDI0MiAxODAiIHN0cm9rZT0iIzE2OEI3OCIgc3Ryb2tlLXdpZHRoPSI2IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9nPgoKPCEtLSByaWRlciAtLT4KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjUwIDI2NSkiPgogIDxjaXJjbGUgY3g9IjkxIiBjeT0iNzYiIHI9IjU0IiBmaWxsPSIjRkZEMkI0Ii8+CiAgPHBhdGggZD0iTTQzIDY4QzQ5IDE2IDExOSA2IDEzOSA2MkMxMTggNDQgNzYgNDUgNDMgNjhaIiBmaWxsPSIjMjYzRTQ4Ii8+CiAgPGNpcmNsZSBjeD0iNzMiIGN5PSI3OSIgcj0iNiIgZmlsbD0iIzI2M0U0OCIvPjxjaXJjbGUgY3g9IjEwNSIgY3k9Ijc5IiByPSI2IiBmaWxsPSIjMjYzRTQ4Ii8+CiAgPHBhdGggZD0iTTc4IDk3Qzg2IDEwNSA5NiAxMDUgMTA0IDk3IiBzdHJva2U9IiNCNDYxNTIiIHN0cm9rZS13aWR0aD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHJlY3QgeD0iNDgiIHk9IjEyNCIgd2lkdGg9Ijg3IiBoZWlnaHQ9IjEzMiIgcng9IjM0IiBmaWxsPSIjM0I4RUMxIi8+CiAgPHBhdGggZD0iTTUxIDE1MEw3IDIxMCIgc3Ryb2tlPSIjRkZEMkI0IiBzdHJva2Utd2lkdGg9IjIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNMTMyIDE0OUwxODAgMTk2IiBzdHJva2U9IiNGRkQyQjQiIHN0cm9rZS13aWR0aD0iMjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L2c+Cgo8IS0tIGluc3BlY3RvciAtLT4KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNzAwIDM1NykiPgogIDxjaXJjbGUgY3g9IjgyIiBjeT0iNTUiIHI9IjQ0IiBmaWxsPSIjRkZEMkI0Ii8+CiAgPHBhdGggZD0iTTQxIDUwQzQ1IDExIDEwNCAxIDEyMiA0NUMxMDIgMzEgNzEgMzEgNDEgNTBaIiBmaWxsPSIjMjczRjQ4Ii8+CiAgPGNpcmNsZSBjeD0iNjgiIGN5PSI1OSIgcj0iNSIgZmlsbD0iIzI3M0Y0OCIvPjxjaXJjbGUgY3g9IjkzIiBjeT0iNTkiIHI9IjUiIGZpbGw9IiMyNzNGNDgiLz4KICA8cGF0aCBkPSJNNzIgNzVDNzkgODIgODggODIgOTUgNzUiIHN0cm9rZT0iI0I0NjE1MiIgc3Ryb2tlLXdpZHRoPSI0IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cmVjdCB4PSIzOSIgeT0iOTkiIHdpZHRoPSI5MSIgaGVpZ2h0PSIxMTkiIHJ4PSIyOCIgZmlsbD0iIzcyQzdCMiIvPgogIDxyZWN0IHg9IjU0IiB5PSIxMTMiIHdpZHRoPSI2MSIgaGVpZ2h0PSIyNCIgcng9IjgiIGZpbGw9IiNmZmYiLz4KICA8dGV4dCB4PSI2NiIgeT0iMTMwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtd2VpZ2h0PSI3MDAiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IiMxNjhCNzgiPuWumuaqojwvdGV4dD4KICA8cGF0aCBkPSJNNDggMTI2TDEwIDE3OCIgc3Ryb2tlPSIjRkZEMkI0IiBzdHJva2Utd2lkdGg9IjE5IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNMTI0IDEyNEwxNjMgMTYyIiBzdHJva2U9IiNGRkQyQjQiIHN0cm9rZS13aWR0aD0iMTkiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxjaXJjbGUgY3g9IjE2NiIgY3k9IjE2NiIgcj0iMjEiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzE2OEI3OCIgc3Ryb2tlLXdpZHRoPSI1Ii8+CiAgPHBhdGggZD0iTTE1NyAxNjZsNyA3IDEzLTE3IiBzdHJva2U9IiMxNjhCNzgiIHN0cm9rZS13aWR0aD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjwvZz4KCjwhLS0gbWFzY290IGNsb3VkIC0tPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4MjMgNDQpIj4KICA8cGF0aCBkPSJNMjcgOTJDNyA5Mi01IDc4IDEgNjFDNiA0NSAyMCAzOSAzNSA0MkMzNyAyMSA1MiA4IDcyIDhDOTEgOCAxMDUgMTkgMTA5IDM2QzEyNiAzMSAxNDMgNDIgMTQ3IDYwQzE1MSA3OCAxMzggOTIgMTE4IDkySDI3WiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjQkZFM0RBIiBzdHJva2Utd2lkdGg9IjQiLz4KICA8Y2lyY2xlIGN4PSI1MiIgY3k9IjYxIiByPSI1IiBmaWxsPSIjMTczOTQzIi8+PGNpcmNsZSBjeD0iOTIiIGN5PSI2MSIgcj0iNSIgZmlsbD0iIzE3Mzk0MyIvPgogIDxwYXRoIGQ9Ik02MSA3M0M2OCA4MSA3NyA4MSA4NCA3MyIgc3Ryb2tlPSIjMTY4Qjc4IiBzdHJva2Utd2lkdGg9IjUiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L2c+Cjx0ZXh0IHg9IjU4IiB5PSI3MCIgZm9udC1mYW1pbHk9Ik1pY3Jvc29mdCBKaGVuZ0hlaSxBcmlhbCIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjkwMCIgZmlsbD0iIzE2N0I2OSI+5q+P5bm05a6a5qqi5LiA5qyh77yM6K6T5oSb6LuK5ZG85ZC45pu05Lm+5reo77yBPC90ZXh0Pgo8L3N2Zz4=" alt="Q版車主騎機車到排氣定檢站接受檢驗">
+        <div class="photo-label"><strong>記得定檢，減少污染</strong><span>定期保養＋排氣檢驗，一起守護空氣品質</span></div>
+      </div>
+    </section>
+
+    <section class="section quick-section" id="quick">
+      <div class="section-head"><div><span class="section-kicker">QUICK GUIDE</span><h2>機車定檢，先記住這 4 件事</h2></div><p>將正式規定整理成民眾最常需要知道的資訊。</p></div>
+      <div class="quick-grid">
+        <article class="quick-card"><span class="quick-icon">🛵</span><h3>誰需要定檢？</h3><strong>出廠滿 5 年以上</strong><p>在臺灣設籍且出廠滿 5 年以上的機車，應依規定接受排氣定檢。</p></article>
+        <article class="quick-card"><span class="quick-icon">📅</span><h3>多久驗一次？</h3><strong>每年 1 次</strong><p>依行車執照「原發照月份」安排每年的排氣定期檢驗。</p></article>
+        <article class="quick-card"><span class="quick-icon">⏰</span><h3>什麼時候驗？</h3><strong>前後各 1 個月</strong><p>可在原發照月份的前 1 個月、當月及後 1 個月完成。</p></article>
+        <article class="quick-card"><span class="quick-icon">📍</span><h3>去哪裡驗？</h3><strong>合格定檢站</strong><p>請至環保機關委託認可的機車排氣定檢站辦理。</p></article>
+      </div>
+      <div class="friendly-note"><span aria-hidden="true">💡</span><div><strong>舉例：</strong>如果行照原發照月份是 <b>3 月</b>，定檢期限就是 <b>2 月 1 日至 4 月 30 日</b>。</div></div>
+    </section>
+
+    <section class="section deadline-section" id="deadline">
+      <div class="deadline-layout">
+        <div class="deadline-intro"><span class="section-kicker">DATE HELPER</span><h2>我的機車什麼時候要定檢？</h2><p>選擇行車執照上的「原發照月份」，網頁會立即幫你算出可定檢的月份範圍。</p><div class="mini-warning">本工具為方便理解的月份試算，正式期限仍請以環境部定檢資訊系統及主管機關公告為準。</div></div>
+        <div class="deadline-tool">
+          <label for="issueMonth">行車執照原發照月份</label>
+          <div class="select-row">
+            <select id="issueMonth">
+              <option value="">請選擇月份</option>
+              <option value="1">1 月</option><option value="2">2 月</option><option value="3">3 月</option><option value="4">4 月</option>
+              <option value="5">5 月</option><option value="6">6 月</option><option value="7">7 月</option><option value="8">8 月</option>
+              <option value="9">9 月</option><option value="10">10 月</option><option value="11">11 月</option><option value="12">12 月</option>
+            </select>
+            <button id="calcDeadline" class="tool-btn">立即試算</button>
+          </div>
+          <div id="deadlineResult" class="deadline-result" aria-live="polite"><span class="result-small">選擇月份後</span><strong>這裡會顯示你的定檢期間</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="process">
+      <div class="section-head"><div><span class="section-kicker">5 STEPS</span><h2>申請流程，用 5 步驟看懂</h2></div><p>不用準備複雜文件，依序完成即可。</p></div>
+      <div class="process-line">
+        <article class="step"><span class="step-no">1</span><div class="step-icon">📄</div><h3>確認發照月份</h3><p>查看行車執照原發照月份，確認自己的檢驗期間。</p></article>
+        <article class="step"><span class="step-no">2</span><div class="step-icon">🔎</div><h3>查詢定檢站</h3><p>使用環境部系統，找離家或工作地點方便的定檢站。</p></article>
+        <article class="step"><span class="step-no">3</span><div class="step-icon">🛵</div><h3>騎車前往</h3><p>將需要定檢的機車騎到合格定檢站進行檢測。</p></article>
+        <article class="step"><span class="step-no">4</span><div class="step-icon">🌿</div><h3>進行排氣檢測</h3><p>由定檢站使用檢測設備確認車輛排氣污染物是否符合標準。</p></article>
+        <article class="step"><span class="step-no">5</span><div class="step-icon">✅</div><h3>確認檢驗結果</h3><p>完成後可透過環境部機車排氣定檢資訊系統查詢檢驗紀錄。</p></article>
+      </div>
+      <div class="process-action"><a class="btn btn-primary-dark" href="https://mobile.moenv.gov.tw/Motor/Station/ST_search.aspx" target="_blank" rel="noopener noreferrer">查詢全國定檢站 ↗</a><span>環境部定檢站查詢資料於 2026/07 顯示全國共 3,921 站。</span></div>
+    </section>
+
+    <section class="photo-band">
+      <figure class="photo-large"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTAwIDcyMCI+CjxkZWZzPgogPGxpbmVhckdyYWRpZW50IGlkPSJiZzIiIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjREZGNEVFIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRTRGMkZCIi8+PC9saW5lYXJHcmFkaWVudD4KIDxmaWx0ZXIgaWQ9InNoMiI+PGZlRHJvcFNoYWRvdyBkeD0iMCIgZHk9IjEyIiBzdGREZXZpYXRpb249IjE2IiBmbG9vZC1jb2xvcj0iIzE3NEY0NyIgZmxvb2Qtb3BhY2l0eT0iLjE0Ii8+PC9maWx0ZXI+CjwvZGVmcz4KPHJlY3Qgd2lkdGg9IjExMDAiIGhlaWdodD0iNzIwIiByeD0iMzgiIGZpbGw9InVybCgjYmcyKSIvPgo8Y2lyY2xlIGN4PSI5MTgiIGN5PSIxMTAiIHI9IjU4IiBmaWxsPSIjRkZFNDlCIi8+CjxwYXRoIGQ9Ik0wIDU2OEMxODkgNTE2IDM0MyA1NTcgNTEyIDUzNUM3MTQgNTA4IDg5MiA1MzYgMTEwMCA0ODJWNzIwSDBaIiBmaWxsPSIjQ0ZFOURFIi8+Cgo8IS0tIHRlc3QgbWFjaGluZSAtLT4KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNjUwIDIzNSkiIGZpbHRlcj0idXJsKCNzaDIpIj4KIDxyZWN0IHdpZHRoPSIyNzAiIGhlaWdodD0iMjgwIiByeD0iMjgiIGZpbGw9IiNmZmYiLz4KIDxyZWN0IHg9IjM1IiB5PSIzNSIgd2lkdGg9IjIwMCIgaGVpZ2h0PSIxMTgiIHJ4PSIxNiIgZmlsbD0iIzE5M0Y0OSIvPgogPHBhdGggZD0iTTYyIDExOEw5MiA4NUwxMjcgMTA0TDE2NCA1OUwyMDcgNzgiIHN0cm9rZT0iIzVGRDJCMyIgc3Ryb2tlLXdpZHRoPSI4IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KIDxjaXJjbGUgY3g9IjcwIiBjeT0iMTk2IiByPSIyNiIgZmlsbD0iI0U4RjdGMiIvPjx0ZXh0IHg9IjU1IiB5PSIyMDQiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9IjkwMCIgZmlsbD0iIzE2OEI3OCI+Q088L3RleHQ+CiA8Y2lyY2xlIGN4PSIxMzciIGN5PSIxOTYiIHI9IjI2IiBmaWxsPSIjRThGN0YyIi8+PHRleHQgeD0iMTIyIiB5PSIyMDQiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9IjkwMCIgZmlsbD0iIzE2OEI3OCI+SEM8L3RleHQ+CiA8cmVjdCB4PSIxNzYiIHk9IjE3OCIgd2lkdGg9IjU4IiBoZWlnaHQ9IjM2IiByeD0iMTAiIGZpbGw9IiNGRkU0OUIiLz4KIDxyZWN0IHg9Ijc2IiB5PSIyNTIiIHdpZHRoPSIxMTgiIGhlaWdodD0iMTgiIHJ4PSI5IiBmaWxsPSIjQjdEN0QwIi8+CjwvZz4KCjwhLS0gc2Nvb3RlciAtLT4KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTI1IDM0MCkiIGZpbHRlcj0idXJsKCNzaDIpIj4KIDxjaXJjbGUgY3g9Ijg2IiBjeT0iMTk1IiByPSI0NCIgZmlsbD0iIzE3Mzk0MyIvPjxjaXJjbGUgY3g9Ijg2IiBjeT0iMTk1IiByPSIxOSIgZmlsbD0iI0I4RDdEMCIvPgogPGNpcmNsZSBjeD0iMjk1IiBjeT0iMTk1IiByPSI0NCIgZmlsbD0iIzE3Mzk0MyIvPjxjaXJjbGUgY3g9IjI5NSIgY3k9IjE5NSIgcj0iMTkiIGZpbGw9IiNCOEQ3RDAiLz4KIDxwYXRoIGQ9Ik04NyAxNzZIMTc4TDIyMSA4NEgyOTYiIHN0cm9rZT0iIzNBOTFDMCIgc3Ryb2tlLXdpZHRoPSIyNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CiA8cGF0aCBkPSJNMTc2IDE3OUgyNzBMMjM1IDEyM0gxNjFaIiBmaWxsPSIjQThEOEYxIi8+CiA8cGF0aCBkPSJNMjIwIDgzTDIwNSA0M0gyNTYiIHN0cm9rZT0iIzE3Mzk0MyIgc3Ryb2tlLXdpZHRoPSIxNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiA8cmVjdCB4PSIxNTEiIHk9IjEwNCIgd2lkdGg9Ijg4IiBoZWlnaHQ9IjI3IiByeD0iMTQiIGZpbGw9IiMxNzM5NDMiLz4KPC9nPgoKPCEtLSBwcm9iZSAtLT4KPHBhdGggZD0iTTQyNiA1MTlDNTExIDUyMiA1NDcgNDgyIDYyMSA0NDUiIHN0cm9rZT0iIzUyNkU3MiIgc3Ryb2tlLXdpZHRoPSIxMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxwYXRoIGQ9Ik02MTggNDQ1TDY1MiA0MzAiIHN0cm9rZT0iIzUyNkU3MiIgc3Ryb2tlLXdpZHRoPSIyMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cgo8IS0tIG1lY2hhbmljIC0tPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0NTUgMjQwKSI+CiA8Y2lyY2xlIGN4PSI3NiIgY3k9IjY4IiByPSI0OSIgZmlsbD0iI0ZGRDJCNCIvPgogPHBhdGggZD0iTTMwIDYyQzM2IDE3IDEwMiA4IDEyMyA1N0M5OSA0MiA2NSA0MiAzMCA2MloiIGZpbGw9IiMyNTNENDciLz4KIDxjaXJjbGUgY3g9IjYyIiBjeT0iNzEiIHI9IjUiIGZpbGw9IiMyNTNENDciLz48Y2lyY2xlIGN4PSI5MSIgY3k9IjcxIiByPSI1IiBmaWxsPSIjMjUzRDQ3Ii8+CiA8cGF0aCBkPSJNNjYgODhDNzQgOTYgODQgOTYgOTIgODgiIHN0cm9rZT0iI0I0NjE1MiIgc3Ryb2tlLXdpZHRoPSI1IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KIDxyZWN0IHg9IjM1IiB5PSIxMTgiIHdpZHRoPSI5MiIgaGVpZ2h0PSIxMjgiIHJ4PSIzMSIgZmlsbD0iIzE2OEI3OCIvPgogPHBhdGggZD0iTTM4IDE1MUwwIDIwNCIgc3Ryb2tlPSIjRkZEMkI0IiBzdHJva2Utd2lkdGg9IjIwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KIDxwYXRoIGQ9Ik0xMjQgMTUxTDE1NCAxOTAiIHN0cm9rZT0iI0ZGRDJCNCIgc3Ryb2tlLXdpZHRoPSIyMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjwvZz4KCjwhLS0gY2xlYW4gYWlyIGNsb3VkICsgbGVhdmVzIC0tPgo8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NSA5NSkiPgogPHBhdGggZD0iTTIzIDk0QzQgOTQtNyA4MC0yIDYzQzMgNDcgMTggNDEgMzIgNDRDMzQgMjMgNTAgOSA3MCA5QzkwIDkgMTA1IDIxIDEwOCAzOEMxMjYgMzMgMTQ0IDQ0IDE0OCA2MkMxNTIgODAgMTM5IDk0IDExOSA5NEgyM1oiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI0JGRTNEQSIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiA8Y2lyY2xlIGN4PSI1MSIgY3k9IjYzIiByPSI1IiBmaWxsPSIjMTczOTQzIi8+PGNpcmNsZSBjeD0iOTIiIGN5PSI2MyIgcj0iNSIgZmlsbD0iIzE3Mzk0MyIvPgogPHBhdGggZD0iTTYwIDc1QzY3IDgyIDc2IDgyIDgzIDc1IiBzdHJva2U9IiMxNjhCNzgiIHN0cm9rZS13aWR0aD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjwvZz4KPGcgZmlsbD0iIzZGQ0Y5NCI+CiA8cGF0aCBkPSJNMjgxIDEzMEMzMjIgOTUgMzUxIDk5IDM2MSAxMDNDMzQ4IDE0MSAzMTggMTU5IDI4MSAxMzBaIi8+CiA8cGF0aCBkPSJNMzE3IDE2MEMzNDkgMTMxIDM4MCAxMzQgMzkxIDEzOUMzNzggMTcxIDM0OSAxODggMzE3IDE2MFoiLz4KPC9nPgo8cGF0aCBkPSJNMjA1IDE3OEMyODggMTU3IDMzNiAxNjQgNDA3IDIwNiIgc3Ryb2tlPSIjNjdDN0IxIiBzdHJva2Utd2lkdGg9IjEwIiBmaWxsPSJub25lIiBzdHJva2UtZGFzaGFycmF5PSIxNSAxNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxwYXRoIGQ9Ik00MDQgMjA2TDM4MiAxODlNNDA0IDIwNkwzNzkgMjE5IiBzdHJva2U9IiM2N0M3QjEiIHN0cm9rZS13aWR0aD0iOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjx0ZXh0IHg9IjYxMiIgeT0iOTMiIGZvbnQtZmFtaWx5PSJNaWNyb3NvZnQgSmhlbmdIZWksQXJpYWwiIGZvbnQtc2l6ZT0iMzQiIGZvbnQtd2VpZ2h0PSI5MDAiIGZpbGw9IiMxNzM5NDMiPuaOkuawo+WumuaqoiA9IOW5q+aEm+i7iuWBmuWBpeW6t+aqouafpTwvdGV4dD4KPHRleHQgeD0iNjE0IiB5PSIxMzgiIGZvbnQtZmFtaWx5PSJNaWNyb3NvZnQgSmhlbmdIZWksQXJpYWwiIGZvbnQtc2l6ZT0iMjIiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiM1Njc2N0MiPuaPkOaXqeeZvOePvuaOkuaUvueVsOW4uO+8jOS5n+S4gOi1t+WuiOitt+epuuawo+WTgeizqjwvdGV4dD4KPC9zdmc+" alt="Q版機車進行排氣檢測與清新空氣插畫"></figure>
+      <div class="photo-copy">
+        <span class="section-kicker light">WHY INSPECTION?</span><h2>為什麼機車要做排氣定檢？</h2>
+        <p>隨著車齡增加，機件劣化或保養不足，都可能讓排氣污染增加。定期檢驗可以協助發現排放異常，也提醒車主進行必要的維修保養。</p>
+        <div class="photo-facts"><span><b>CO</b> 一氧化碳</span><span><b>HC</b> 碳氫化合物</span><span><b>每年</b> 定期把關</span></div>
+      </div>
+    </section>
+
+    <section class="section fail-section" id="fail">
+      <div class="section-head"><div><span class="section-kicker">IF NOT PASSED</span><h2>機車定檢不合格，接下來怎麼辦？</h2></div><p>最重要的是「不要放著不處理」。</p></div>
+      <div class="fail-flow">
+        <div class="fail-box"><span class="fail-icon">⚠️</span><div><small>STEP 1</small><h3>確認不合格項目</h3><p>先向定檢站了解檢驗結果，確認可能需要檢查或維修的項目。</p></div></div>
+        <div class="flow-arrow" aria-hidden="true">→</div>
+        <div class="fail-box"><span class="fail-icon">🔧</span><div><small>STEP 2</small><h3>進行維修保養</h3><p>依車況進行必要的調整、保養或零件維修。</p></div></div>
+        <div class="flow-arrow" aria-hidden="true">→</div>
+        <div class="fail-box important"><span class="fail-icon">✅</span><div><small>STEP 3</small><h3>1 個月內複驗</h3><p>依規定應於檢驗日起 1 個月內完成修復並申請複驗。</p></div></div>
+      </div>
+    </section>
+
+    <section class="section penalty-section">
+      <div class="penalty-box">
+        <div class="penalty-title"><span>⚠️</span><div><span class="section-kicker danger">REMINDER</span><h2>超過期限沒驗，可能會被處罰</h2></div></div>
+        <div class="penalty-grid">
+          <article><span>逾期未定檢</span><strong>500 元</strong><p>未依規定期限完成排氣定期檢驗。</p></article>
+          <article><span>不合格未完成改善</span><strong>1,500 元</strong><p>定檢不合格，未於期限內修復並複驗合格等情形。</p></article>
+          <article><span>逾期 6 個月等情形</span><strong>最高涉及 3,000 元</strong><p>並可能在通知限期改善後，進一步移請監理機關辦理牌照相關處分。</p></article>
+        </div>
+        <p class="penalty-note">※ 罰則摘要供民眾快速理解，實際裁罰仍應依現行空氣污染防制法規及主管機關認定辦理。</p>
+      </div>
+    </section>
+
+    <section class="section data-section" id="data">
+      <div class="section-head"><div><span class="section-kicker">DATA</span><h2>用數據看機車排氣定檢</h2></div><p>數據更新時間不同，正式發布前請再次核對最新官方資料。</p></div>
+      <div class="data-grid">
+        <article class="chart-card donut-card">
+          <div><span class="chart-label">歷年全國檢測概況</span><h3>不合格率約 4%</h3><p>環境部指出，歷年機車排氣定檢資料顯示，不合格率約為 4%。</p></div>
+          <div class="donut-wrap"><div class="donut" role="img" aria-label="機車排氣定檢不合格率約4%"><div class="donut-center"><strong>約 4%</strong><span>不合格</span></div></div></div>
+        </article>
+        <article class="chart-card station-card">
+          <span class="chart-label">2026/07 全國定檢站資料</span><h3>六都定檢站數量</h3>
+          <div class="bar-chart">
+            <div class="bar-row"><span>新北市</span><div class="bar-track"><i style="--v:100%"></i></div><b>635</b></div>
+            <div class="bar-row"><span>高雄市</span><div class="bar-track"><i style="--v:82.5%"></i></div><b>524</b></div>
+            <div class="bar-row"><span>臺中市</span><div class="bar-track"><i style="--v:76.9%"></i></div><b>488</b></div>
+            <div class="bar-row"><span>臺南市</span><div class="bar-track"><i style="--v:54%"></i></div><b>343</b></div>
+            <div class="bar-row"><span>桃園市</span><div class="bar-track"><i style="--v:52.6%"></i></div><b>334</b></div>
+            <div class="bar-row"><span>臺北市</span><div class="bar-track"><i style="--v:40.8%"></i></div><b>259</b></div>
+          </div>
+          <p class="chart-foot">資料來源：環境部機車排氣定檢資訊管理系統。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="sms-section">
+      <div class="sms-art" aria-hidden="true"><div class="phone"><div class="phone-top"></div><div class="sms-bubble"><span>新北市機車定檢提醒</span><strong>您的愛車定檢時間快到了！</strong><small>請記得前往合格定檢站完成排氣檢驗。</small></div></div></div>
+      <div class="sms-copy"><span class="section-kicker light">NEW TAIPEI CITY</span><h2>新北市 115 年起<br>定檢通知改用簡訊</h2><p>自 115 年 1 月 1 日起，新北市機車排氣定檢通知停止寄發紙本明信片，改採手機簡訊提醒。新北市車籍民眾可登錄車號與手機號碼，同一手機號碼也可協助登錄多輛機車。</p><a class="btn btn-white" href="https://motor.ntpc.gov.tw/sms" target="_blank" rel="noopener noreferrer">前往新北市簡訊登錄平台 ↗</a></div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="section-head"><div><span class="section-kicker">FAQ</span><h2>民眾常見問題</h2></div><p>點一下問題即可展開答案。</p></div>
+      <div class="faq-list">
+        <details><summary>我的機車還沒滿 5 年，需要每年排氣定檢嗎？</summary><p>依現行規定，排氣定檢對象為出廠滿 5 年以上的機車。</p></details>
+        <details><summary>一定要回原本買車的機車行檢驗嗎？</summary><p>不用。可到環保機關委託認可的機車排氣定檢站辦理，建議先利用官方網站查詢附近站點。</p></details>
+        <details><summary>檢驗不合格後可以不處理嗎？</summary><p>不可以。依規定，不合格車輛應於檢驗日起 1 個月內修復並申請複驗。</p></details>
+        <details><summary>怎麼確認我的機車已經完成定檢？</summary><p>可至環境部「機車排氣定期檢驗資訊管理系統」查詢歷次檢驗狀況。</p></details>
+        <details><summary>為什麼要定期檢驗？</summary><p>車輛使用時間增加後，機件劣化與保養狀況可能影響排放。透過定期檢驗及維修保養，可降低高污染排放的風險。</p></details>
+      </div>
+    </section>
+
+    <section class="section links-section" id="links">
+      <div class="section-head"><div><span class="section-kicker">OFFICIAL LINKS</span><h2>官方查詢服務</h2></div><p>需要查自己的車輛資料時，請以官方系統為準。</p></div>
+      <div class="link-grid">
+        <a class="service-card" href="https://mobile.moenv.gov.tw/motor/Index.aspx" target="_blank" rel="noopener noreferrer"><span class="service-icon">🔍</span><div><strong>環境部機車排氣定檢資訊系統</strong><p>查詢檢驗資訊、定檢法規與相關服務。</p></div><span class="go">↗</span></a>
+        <a class="service-card" href="https://mobile.moenv.gov.tw/Motor/Station/ST_search.aspx" target="_blank" rel="noopener noreferrer"><span class="service-icon">📍</span><div><strong>全國定檢站查詢</strong><p>依縣市、鄉鎮市區或地址查詢定檢站。</p></div><span class="go">↗</span></a>
+        <a class="service-card" href="https://motor.ntpc.gov.tw/sms" target="_blank" rel="noopener noreferrer"><span class="service-icon">📱</span><div><strong>新北市機車定檢簡訊平台</strong><p>新北市車籍可登錄手機簡訊定檢提醒。</p></div><span class="go">↗</span></a>
+      </div>
+      <div class="source-note"><h3>資料來源</h3><p>本範本內容依環境部「車輛排氣定檢檢驗」、「機車排氣定期檢驗資訊管理系統」、「機車車主不可不知及問答集」及新北市政府環保局公開資訊整理。法規、罰則、站數及服務方式可能調整，正式發布前務必重新核對。</p></div>
+      <div class="photo-credit"><strong>插圖說明：</strong>首頁及排氣檢驗情境已改為本站 Q 版示意插畫，不再載入 Wikimedia 外部照片。</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>機車排氣定期檢驗資訊專區</strong><p>定期檢驗．定期保養．一起維護空氣品質</p></div>
+    <div class="footer-warning">【本頁為網站範本，正式發布前請更新聯絡方式及公告內容。】</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

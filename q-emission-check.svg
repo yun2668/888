@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720">
+<defs>
+ <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#DFF4EE"/><stop offset="1" stop-color="#E4F2FB"/></linearGradient>
+ <filter id="sh2"><feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#174F47" flood-opacity=".14"/></filter>
+</defs>
+<rect width="1100" height="720" rx="38" fill="url(#bg2)"/>
+<circle cx="918" cy="110" r="58" fill="#FFE49B"/>
+<path d="M0 568C189 516 343 557 512 535C714 508 892 536 1100 482V720H0Z" fill="#CFE9DE"/>
+
+<!-- test machine -->
+<g transform="translate(650 235)" filter="url(#sh2)">
+ <rect width="270" height="280" rx="28" fill="#fff"/>
+ <rect x="35" y="35" width="200" height="118" rx="16" fill="#193F49"/>
+ <path d="M62 118L92 85L127 104L164 59L207 78" stroke="#5FD2B3" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+ <circle cx="70" cy="196" r="26" fill="#E8F7F2"/><text x="55" y="204" font-family="Arial" font-size="22" font-weight="900" fill="#168B78">CO</text>
+ <circle cx="137" cy="196" r="26" fill="#E8F7F2"/><text x="122" y="204" font-family="Arial" font-size="22" font-weight="900" fill="#168B78">HC</text>
+ <rect x="176" y="178" width="58" height="36" rx="10" fill="#FFE49B"/>
+ <rect x="76" y="252" width="118" height="18" rx="9" fill="#B7D7D0"/>
+</g>
+
+<!-- scooter -->
+<g transform="translate(125 340)" filter="url(#sh2)">
+ <circle cx="86" cy="195" r="44" fill="#173943"/><circle cx="86" cy="195" r="19" fill="#B8D7D0"/>
+ <circle cx="295" cy="195" r="44" fill="#173943"/><circle cx="295" cy="195" r="19" fill="#B8D7D0"/>
+ <path d="M87 176H178L221 84H296" stroke="#3A91C0" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+ <path d="M176 179H270L235 123H161Z" fill="#A8D8F1"/>
+ <path d="M220 83L205 43H256" stroke="#173943" stroke-width="16" stroke-linecap="round"/>
+ <rect x="151" y="104" width="88" height="27" rx="14" fill="#173943"/>
+</g>
+
+<!-- probe -->
+<path d="M426 519C511 522 547 482 621 445" stroke="#526E72" stroke-width="13" fill="none" stroke-linecap="round"/>
+<path d="M618 445L652 430" stroke="#526E72" stroke-width="22" stroke-linecap="round"/>
+
+<!-- mechanic -->
+<g transform="translate(455 240)">
+ <circle cx="76" cy="68" r="49" fill="#FFD2B4"/>
+ <path d="M30 62C36 17 102 8 123 57C99 42 65 42 30 62Z" fill="#253D47"/>
+ <circle cx="62" cy="71" r="5" fill="#253D47"/><circle cx="91" cy="71" r="5" fill="#253D47"/>
+ <path d="M66 88C74 96 84 96 92 88" stroke="#B46152" stroke-width="5" fill="none" stroke-linecap="round"/>
+ <rect x="35" y="118" width="92" height="128" rx="31" fill="#168B78"/>
+ <path d="M38 151L0 204" stroke="#FFD2B4" stroke-width="20" stroke-linecap="round"/>
+ <path d="M124 151L154 190" stroke="#FFD2B4" stroke-width="20" stroke-linecap="round"/>
+</g>
+
+<!-- clean air cloud + leaves -->
+<g transform="translate(95 95)">
+ <path d="M23 94C4 94-7 80-2 63C3 47 18 41 32 44C34 23 50 9 70 9C90 9 105 21 108 38C126 33 144 44 148 62C152 80 139 94 119 94H23Z" fill="#fff" stroke="#BFE3DA" stroke-width="4"/>
+ <circle cx="51" cy="63" r="5" fill="#173943"/><circle cx="92" cy="63" r="5" fill="#173943"/>
+ <path d="M60 75C67 82 76 82 83 75" stroke="#168B78" stroke-width="5" fill="none" stroke-linecap="round"/>
+</g>
+<g fill="#6FCF94">
+ <path d="M281 130C322 95 351 99 361 103C348 141 318 159 281 130Z"/>
+ <path d="M317 160C349 131 380 134 391 139C378 171 349 188 317 160Z"/>
+</g>
+<path d="M205 178C288 157 336 164 407 206" stroke="#67C7B1" stroke-width="10" fill="none" stroke-dasharray="15 15" stroke-linecap="round"/>
+<path d="M404 206L382 189M404 206L379 219" stroke="#67C7B1" stroke-width="9" stroke-linecap="round"/>
+<text x="612" y="93" font-family="Microsoft JhengHei,Arial" font-size="34" font-weight="900" fill="#173943">排氣定檢 = 幫愛車做健康檢查</text>
+<text x="614" y="138" font-family="Microsoft JhengHei,Arial" font-size="22" font-weight="700" fill="#56767C">提早發現排放異常，也一起守護空氣品質</text>
+</svg>
